@@ -48,3 +48,33 @@ function loadGoogleMapsScript() {
 document.addEventListener("DOMContentLoaded", function(){
     loadGoogleMapsScript();
 });
+
+
+let currentSlide = 0;
+const images = [
+    'images/chopper.png',
+    'images/hattori.png',
+    'images/karoo.png',
+    'images/pappagu.png',
+    'images/eyelashes.png',
+];
+
+function showSlide(index) {
+    currentSlide = index;
+    if (currentSlide >= images.length) { currentSlide = 0; }
+    if (currentSlide < 0) { currentSlide = images.length - 1; }
+    document.getElementById('slideImg').src = images[currentSlide];
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+document.getElementById('slideLeft').addEventListener('click', function() {
+    changeSlide(-1);
+});
+
+document.getElementById('slideRight').addEventListener('click', function() {
+    changeSlide(1);
+});
+
