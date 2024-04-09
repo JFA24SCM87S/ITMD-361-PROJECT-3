@@ -1,8 +1,15 @@
 function initMap() {
     var location = {lat: 41.8349, lng: -87.627};
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
+        zoom: 16,
         center: location
+    });
+
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        draggable: true,
+        title: 'Drag me!'
     });
 
 
