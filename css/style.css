@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: crimson;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.resume-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+section li {
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 5em;
+    color: #555;
+}
+
+.img-horizontal {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.img-vertical {
+    height: auto;
+    max-height: 300px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.iframe-container::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.media-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.media-container img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#hobbies img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media-container audio {
+    width: 100%;
+    display: inline-block;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .resume-section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .intro-text {
+        font-size: 0.9em;
+    }
+}
