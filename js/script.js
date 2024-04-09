@@ -12,6 +12,12 @@ function initMap() {
         title: 'Drag me!'
     });
 
+    var infoWindow = new google.maps.InfoWindow({
+        content: '<p>Your current position is at Illinois Institute of Technology, located at coordinates 41.8349, -87.6270.</p><p><b>Drag this marker to your desired location, displaying the (Lat, Long) position.</b></p>'
+    });
+
+    infoWindow.open(map, marker);
+
 
 }
 
