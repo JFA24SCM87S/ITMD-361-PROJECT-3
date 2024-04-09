@@ -186,3 +186,8 @@ section li {
         font-size: 0.9em;
     }
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
